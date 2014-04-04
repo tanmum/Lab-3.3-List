@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		F680BD8718EDEFC800B2131B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD8618EDEFC800B2131B /* main.cpp */; };
 		F680BD8918EDEFC800B2131B /* Lab_3_3_List.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F680BD8818EDEFC800B2131B /* Lab_3_3_List.1 */; };
+		F680BD9218EDF3D400B2131B /* Link.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD9118EDF3D400B2131B /* Link.cpp */; };
+		F680BD9418EDF50600B2131B /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD9318EDF50600B2131B /* List.cpp */; };
+		F680BD9918EE32AB00B2131B /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD9718EE32AB00B2131B /* String.cpp */; };
+		F680BD9C18EE344600B2131B /* Service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD9A18EE344600B2131B /* Service.cpp */; };
+		F680BD9F18EE35B100B2131B /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BD9D18EE35B100B2131B /* Customer.cpp */; };
+		F680BDA218EE3F6500B2131B /* Credit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F680BDA018EE3F6500B2131B /* Credit.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +34,18 @@
 		F680BD8318EDEFC800B2131B /* Lab 3.3 List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 3.3 List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680BD8618EDEFC800B2131B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F680BD8818EDEFC800B2131B /* Lab_3_3_List.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Lab_3_3_List.1; sourceTree = "<group>"; };
+		F680BD8F18EDF22400B2131B /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		F680BD9018EDF25E00B2131B /* Link.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Link.hpp; sourceTree = "<group>"; };
+		F680BD9118EDF3D400B2131B /* Link.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Link.cpp; sourceTree = "<group>"; };
+		F680BD9318EDF50600B2131B /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		F680BD9518EE31C300B2131B /* Service.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Service.hpp; sourceTree = "<group>"; };
+		F680BD9618EE320900B2131B /* String.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
+		F680BD9718EE32AB00B2131B /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
+		F680BD9A18EE344600B2131B /* Service.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Service.cpp; sourceTree = "<group>"; };
+		F680BD9D18EE35B100B2131B /* Customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
+		F680BD9E18EE35B100B2131B /* Customer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Customer.hpp; sourceTree = "<group>"; };
+		F680BDA018EE3F6500B2131B /* Credit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Credit.cpp; sourceTree = "<group>"; };
+		F680BDA118EE3F6500B2131B /* Credit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Credit.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +79,19 @@
 			isa = PBXGroup;
 			children = (
 				F680BD8618EDEFC800B2131B /* main.cpp */,
+				F680BD9D18EE35B100B2131B /* Customer.cpp */,
+				F680BD9E18EE35B100B2131B /* Customer.hpp */,
+				F680BD8F18EDF22400B2131B /* List.hpp */,
+				F680BD9018EDF25E00B2131B /* Link.hpp */,
+				F680BD9318EDF50600B2131B /* List.cpp */,
+				F680BD9518EE31C300B2131B /* Service.hpp */,
+				F680BD9A18EE344600B2131B /* Service.cpp */,
+				F680BD9718EE32AB00B2131B /* String.cpp */,
+				F680BD9618EE320900B2131B /* String.hpp */,
+				F680BD9118EDF3D400B2131B /* Link.cpp */,
 				F680BD8818EDEFC800B2131B /* Lab_3_3_List.1 */,
+				F680BDA018EE3F6500B2131B /* Credit.cpp */,
+				F680BDA118EE3F6500B2131B /* Credit.hpp */,
 			);
 			path = "Lab 3.3 List";
 			sourceTree = "<group>";
@@ -117,7 +147,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F680BDA218EE3F6500B2131B /* Credit.cpp in Sources */,
+				F680BD9418EDF50600B2131B /* List.cpp in Sources */,
 				F680BD8718EDEFC800B2131B /* main.cpp in Sources */,
+				F680BD9C18EE344600B2131B /* Service.cpp in Sources */,
+				F680BD9F18EE35B100B2131B /* Customer.cpp in Sources */,
+				F680BD9918EE32AB00B2131B /* String.cpp in Sources */,
+				F680BD9218EDF3D400B2131B /* Link.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

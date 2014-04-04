@@ -25,6 +25,7 @@ public:
 	void *getNextItem();							// Get to next item, if traversing the links
 	void *restart();								// Start traversal from fisrt item and return it
     int getCount();
+    void insert(void*);
 };
 
 #endif

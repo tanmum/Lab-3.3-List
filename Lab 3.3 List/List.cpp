@@ -57,3 +57,18 @@ int List::getCount()
     }
     return count;
 }
+
+void List::insert(void * item)
+{
+    if (!start)
+	{
+		start = new Link(item);					// Create the first link to this item
+		end = start;							// first item is also last (one single item)
+	}
+    else
+    {
+        auto newLink = new Link(item);
+        newLink->append(start);
+        start = newLink;
+    }
+}

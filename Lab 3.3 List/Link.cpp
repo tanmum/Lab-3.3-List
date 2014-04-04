@@ -20,6 +20,12 @@ Link *Link::append(void *it)		// Append an item
 	return next;
 }
 
+Link *Link::append(Link *nextLink)
+{
+    next = nextLink;
+    return nextLink;
+}
+
 Link::~Link()					// Destructor
 {
 	if (next)					// If there is a neighbor,

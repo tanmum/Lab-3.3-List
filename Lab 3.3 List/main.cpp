@@ -52,6 +52,10 @@ int main(int argc, const char * argv[])
     for (int i = 0; i < sizeof(customers)/sizeof(Customer); i++) {
         customerList.append(&customers[i]);
     }
+    
+    Customer mum("MUM", "1000 N St", "515-111-5555", "515-555-1111");
+    mum.setCredit("MUM' fund", "So far", 30000.0, 0.7);
+    customerList.insert(&mum);
 	
 	// Show all customers that are in that list:
     Customer *go = (Customer*) customerList.restart();

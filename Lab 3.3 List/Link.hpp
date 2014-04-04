@@ -20,6 +20,7 @@ public:
 	~Link();								// Destructor
 	void *getItem() {return item;}			// Get this Link's item
 	Link *append(void *it);					// Append this item to the list of Links
+    Link *append(Link* nextLink);           // Append another Link next to this Link
 };
 
 #endif

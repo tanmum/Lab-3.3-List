@@ -21,11 +21,11 @@ private:
 public:
 	List(){start = 0; end = 0; current = 0;}		// Initialize all pointers
 	~List() {if (start) delete start, start = 0;}	// Empty the list of all its links
-	void append(void *);							// Append an object in list
+	List& append(void *);							// Append an object in list
 	void *getNextItem();							// Get to next item, if traversing the links
 	void *restart();								// Start traversal from fisrt item and return it
     int getCount();
-    void insert(void*);
+    List& insert(void*);
 };
 
 #endif

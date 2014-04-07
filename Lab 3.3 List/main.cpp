@@ -38,24 +38,17 @@ int main(int argc, const char * argv[])
     
     
 	// Customers to be used in the list
-    Customer customers[] =
-    {
-        Customer ("Object Discovery", "701 N Court", "641-472-6050", "641-469-5252"),
-        Customer ("Kinko", "1234 South Madison", "405-203-3450", "123-425-9880"),
-        Customer ("First Baptist Church", "103 N 4th", "485-993-9900", "485-993-9901")
-    };
+    Customer odc("Object Discovery", "701 N Court", "641-472-6050", "641-469-5252");
+	Customer kinko("Kinko", "1234 South Madison", "405-203-3450", "123-425-9880");
+	Customer fbc("First Baptist Church", "103 N 4th", "485-993-9900", "485-993-9901");
+    Customer mum("MUM", "1000 N St", "515-111-5555", "515-555-1111");
+    mum.setCredit("MUM' fund", "So far", 30000.0, 0.7);
     
 	// The List instance to be tested
 	List customerList;
     
 	// Append all Customers; remember: this list takes object pointers:
-    for (int i = 0; i < sizeof(customers)/sizeof(Customer); i++) {
-        customerList.append(&customers[i]);
-    }
-    
-    Customer mum("MUM", "1000 N St", "515-111-5555", "515-555-1111");
-    mum.setCredit("MUM' fund", "So far", 30000.0, 0.7);
-    customerList.insert(&mum);
+    customerList.append(&odc).append(&kinko).append(&fbc).insert(&mum);
 	
 	// Show all customers that are in that list:
     Customer *go = (Customer*) customerList.restart();

@@ -8,7 +8,7 @@
 
 #include "List.hpp"
 
-void List::append(void *item)					// Append an item
+List& List::append(void *item)					// Append an item
 {
 	if (!start)
 	{
@@ -18,6 +18,7 @@ void List::append(void *item)					// Append an item
 	else
 		if (end)
 			end = end->append(item);			// Delegate this append to last link
+    return *this;
 }												// Make that new one the end
 
 void *List::restart()							// Restart from first item
@@ -58,7 +59,7 @@ int List::getCount()
     return count;
 }
 
-void List::insert(void * item)
+List& List::insert(void * item)
 {
     if (!start)
 	{
@@ -71,4 +72,5 @@ void List::insert(void * item)
         newLink->append(start);
         start = newLink;
     }
+    return *this;
 }
